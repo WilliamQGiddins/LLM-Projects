@@ -8,9 +8,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 def fetch_website_contents(url):
     """
     Return the title and contents of the website at the given url;
-    truncate to 2,000 characters as a sensible limit
     """
-
+      
     # Configure headless Chrome
     options = Options()
     options.add_argument('--headless')
@@ -39,7 +38,7 @@ def fetch_website_contents(url):
     # Remove unnecesssary elements
     for irrelevant in soup.body(["scripts", "style", "img", "input"]):
         irrelevant.decompose
-
+ 
     # Extract content
     title = soup.title.string if soup.title else "No title found"
     text = soup.body.get_text(separator='\n', strip=True)
