@@ -1,6 +1,6 @@
 # LLM Projects Portfolio
 
-A collection of **six production-style applications** that demonstrate end-to-end use of Large Language Models (LLMs), from web scraping and multi-model orchestration to agentic tools, speech processing, and synthetic data generation. Built with Python, Jupyter, and both frontier APIs (OpenAI, Anthropic, Google) and open-source models (Hugging Face, Ollama).
+A collection of **production-style applications** that demonstrate end-to-end use of Large Language Models (LLMs), from web scraping and multi-model orchestration to agentic tools, speech processing, and synthetic data generation. Built with Python, Jupyter, and both frontier APIs (OpenAI, Anthropic, Google) and open-source models (Hugging Face, Ollama).
 
 ---
 
@@ -12,19 +12,20 @@ This repository showcases practical LLM engineering: building real workflows tha
 
 ## Tech Stack
 
-| Category | Technologies |
-|----------|--------------|
-| **LLM APIs** | OpenAI, Anthropic (Claude), Google (Gemini), Ollama (local) |
+| Category           | Technologies                                                        |
+| ------------------ | ------------------------------------------------------------------- |
+| **LLM APIs**       | OpenAI, Anthropic (Claude), Google (Gemini), Ollama (local)         |
 | **Open-source ML** | Hugging Face (Transformers, pipelines), BitsAndBytes (quantization) |
-| **Web & Data** | Selenium, BeautifulSoup, SQLite, Pandas, JSON/JSONL |
-| **UI & Demo** | Gradio (chat, audio, image, file upload) |
-| **Environment** | Python, Jupyter, `python-dotenv`, Google Colab–compatible notebooks |
+| **Web & Data**     | Selenium, BeautifulSoup, SQLite, Pandas, JSON/JSONL                 |
+| **UI & Demo**      | Gradio (chat, audio, image, file upload)                            |
+| **Environment**    | Python, Jupyter, `python-dotenv`, Google Colab–compatible notebooks |
 
 ---
 
 ## Projects
 
-### 1. Sports Website Scraper Aggregator  
+### 1. Sports Website Scraper Aggregator
+
 **`1 - WebScraper/`**
 
 Scrapes sports websites (including JavaScript-rendered content) and uses an **Ollama-based LLM** to aggregate and summarize the content into a single, readable view.
@@ -34,7 +35,8 @@ Scrapes sports websites (including JavaScript-rendered content) and uses an **Ol
 
 ---
 
-### 2. Brochure Builder  
+### 2. Brochure Builder
+
 **`2 - BrochureBuilder/`**
 
 Takes a **company website URL** and produces a concise, professional summary suitable for clients, investors, or recruits. Uses multiple LLM steps: link relevance filtering (one-shot prompting), content extraction, and streaming brochure generation.
@@ -44,7 +46,8 @@ Takes a **company website URL** and produces a concise, professional summary sui
 
 ---
 
-### 3. Multi-Model Chat: Group Vacation Planner  
+### 3. Multi-Model Chat: Group Vacation Planner
+
 **`3 - ChatBotConversation/`**
 
 A **three-way conversation** between different frontier models (e.g., OpenAI, Anthropic, Gemini) simulating friends planning a group vacation. Illustrates conversation history as a single sequence of API calls and compares model “personalities” and behavior.
@@ -54,7 +57,8 @@ A **three-way conversation** between different frontier models (e.g., OpenAI, An
 
 ---
 
-### 4. Event Booking Agent  
+### 4. Event Booking Agent
+
 **`4 - EventBookingAgent/`**
 
 An **agentic chatbot** that helps users find and book events. It uses **tool calling** (e.g., query price, date, city, capacity, book event) against a **SQLite** backend, handles **nested tool calls**, and after a booking generates a **custom image** (OpenAI Image API) and **audio** (OpenAI TTS) as a thank-you.
@@ -64,7 +68,8 @@ An **agentic chatbot** that helps users find and book events. It uses **tool cal
 
 ---
 
-### 5. Speech-to-Text Summarization  
+### 5. Speech-to-Text Summarization
+
 **`5 - SpeechToText/`**
 
 **Speech → text** (OpenAI Whisper-style API) then **summarization** with a Hugging Face open-source model. Includes tokenization, quantization for lower GPU memory, and a Gradio interface with file upload.
@@ -74,13 +79,26 @@ An **agentic chatbot** that helps users find and book events. It uses **tool cal
 
 ---
 
-### 6. Synthetic Data Generator  
+### 6. Synthetic Data Generator
+
 **`6 - SyntheticDataGenerator/`**
 
 Generates **business-style datasets** using a mix of Hugging Face open-source models and optional frontier models. Users can supply a sample schema; the app produces structured data (e.g., JSONL), with Pandas for preview and analysis, and supports multiple output formats.
 
 - **Highlights:** Quantization, tokenizer + model parsing for assistant-only output, JSONL, Pandas, error handling, Gradio blocks with multiple inputs/outputs.
 - **Use case:** Synthetic training data, demos, or schema-driven data generation (Colab-friendly).
+
+---
+
+### 7. Code Translator
+
+**`6 - CodeTranslator/`**
+
+Generates **optimized code** in a different language using frontier and open source models. So users can compare speeds and select the most efficient and cost effective model for their needs. Reads the users system spec and provides the compile
+and run command specialized for their machine.
+
+- **Highlights:** System spec reading, code generation, model comparison.
+- **Use case:** Code optimization, interpreted language to compiled language, in app code execution.
 
 ---
 
@@ -94,6 +112,7 @@ LLM-Projects/
 ├── 4 - EventBookingAgent/   # Tool-using agent + SQLite + image/audio
 ├── 5 - SpeechToText/        # Transcribe + summarize with HF + OpenAI
 ├── 6 - SyntheticDataGenerator/ # Schema-aware synthetic data + Gradio
+├── 7 - CodeTranslator/ # System spec reader + code optimization + Gradio
 └── README.md
 ```
 
@@ -104,6 +123,7 @@ Each project is self-contained in its folder, typically with a Jupyter notebook 
 ## Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/LLM-Projects.git
    cd LLM-Projects
