@@ -92,7 +92,7 @@ Generates **business-style datasets** using a mix of Hugging Face open-source mo
 
 ### 7. Code Translator
 
-**`6 - CodeTranslator/`**
+**`7 - CodeTranslator/`**
 
 Generates **optimized code** in a different language using frontier and open source models. So users can compare speeds and select the most efficient and cost effective model for their needs. Reads the users system spec and provides the compile
 and run command specialized for their machine.
