@@ -1,0 +1,2 @@
+# Overview
+Founded with a passion for play, our company has grown into a respected player in the toy industry. Committed to quality, safety, and innovative design, we proudly serve families worldwide with toys that encourage fun and learning.

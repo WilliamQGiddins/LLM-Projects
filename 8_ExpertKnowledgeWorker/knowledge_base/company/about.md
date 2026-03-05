@@ -1,0 +1,2 @@
+# About
+Our company is dedicated to creating wonderful and engaging toys that inspire creativity and enhance imagination in children. We offer a vast range of products, including educational toys, arts and crafts supplies, and innovative tech toys designed for children of all ages.

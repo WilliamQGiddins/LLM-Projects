@@ -1,0 +1,2 @@
+# Culture
+Our company thrives on a warm and welcoming culture where creativity and collaboration are encouraged. We value each employee's contributions and foster a supportive environment that promotes professional growth and personal well-being.
